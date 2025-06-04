@@ -1,0 +1,155 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(50, 24, 6);
+  color: seashell;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  padding: 0 20px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: seashell;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c2a67e;
+}
+
+/* Make space for fixed header */
+main {
+  padding-top: 80px;
+}
+
+/* Mission Section */
+.mission {
+  background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content {
+  padding: 20px 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Featured Coffee Section */
+.featured-coffee {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.featured-coffee h2 {
+  margin-bottom: 10px;
+}
+
+.featured-coffee h4 {
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.coffee-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.coffee-item {
+  width: 300px;
+}
+
+.coffee-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.coffee-item p {
+  margin-top: 10px;
+}
+
+/* Locations Section */
+.locations {
+  background-image: url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: seashell;
+}
+
+.location-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  width: 300px;
+  border: 1px solid seashell;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid seashell;
+}
+
+footer h2, footer h5 {
+  margin: 10px 0;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #aaa;
+}
